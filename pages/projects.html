@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои проекты - Портфолио Иванова Александра</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="content">
+            <header class="header">
+                <div class="header__logo">
+                    <img class="header__logo-img" src="/images/MIREA_Gerb_Colour.png" alt="Логотип МИРЭА">
+                </div>
+                <h1 class="header__text">Мои проекты</h1>
+                <p class="header__subtitle">Учебные и личные работы</p>
+            </header>
+
+            <nav class="nav">
+                <div class="nav__container">
+                    <a href="/index.html" class="nav__button-link">Главная</a>
+                    <a href="/pages/projects.html" class="nav__button-link active">Проекты</a>
+                    <a href="/pages/diary.html" class="nav__button-link">Дневник</a>
+                    <a href="/pages/contacts.html" class="nav__button-link">Контакты</a>
+                </div>
+            </nav>
+
+            <main>
+                <div class="projects-page__container">
+                    <div class="projects-filter">
+                        <button class="filter-btn active" data-filter="all">Все проекты</button>
+                        <button class="filter-btn" data-filter="web">Веб-разработка</button>
+                        <button class="filter-btn" data-filter="design">Дизайн</button>
+                        <button class="filter-btn" data-filter="mobile">Мобильные приложения</button>
+                    </div>
+
+                    <div class="projects-grid">
+                        <!-- Проект 1 -->
+                        <div class="project-card" data-category="web">
+                            <div class="project-card__image">
+                                <img src="/images/photo.jpg" alt="Интернет-магазин">
+                                <div class="project-card__overlay">
+                                    <span class="project-card__view">Посмотреть проект</span>
+                                </div>
+                            </div>
+                            <div class="project-card__info">
+                                <h3 class="project-card__title">Интернет-магазин</h3>
+                                <p class="project-card__description">Полнофункциональный магазин с корзиной и оплатой</p>
+                                <div class="project-card__tags">
+                                    <span class="project-tag">HTML/CSS</span>
+                                    <span class="project-tag">JavaScript</span>
+                                    <span class="project-tag">PHP</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="web">
+                            <div class="project-card__image">
+                                <img src="/images//photo.jpg" alt="Корпоративный сайт">
+                                <div class="project-card__overlay">
+                                    <span class="project-card__view">Посмотреть проект</span>
+                                </div>
+                            </div>
+                            <div class="project-card__info">
+                                <h3 class="project-card__title">Корпоративный сайт</h3>
+                                <p class="project-card__description">Адаптивный сайт для IT-компании</p>
+                                <div class="project-card__tags">
+                                    <span class="project-tag">React</span>
+                                    <span class="project-tag">Bootstrap</span>
+                                    <span class="project-tag">API</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="web">
+                            <div class="project-card__image">
+                                <img src="/images/photo.jpg" alt="Веб-приложение">
+                                <div class="project-card__overlay">
+                                    <span class="project-card__view">Посмотреть проект</span>
+                                </div>
+                            </div>
+                            <div class="project-card__info">
+                                <h3 class="project-card__title">Веб-приложение</h3>
+                                <p class="project-card__description">Приложение для управления задачами</p>
+                                <div class="project-card__tags">
+                                    <span class="project-tag">Vue.js</span>
+                                    <span class="project-tag">Firebase</span>
+                                    <span class="project-tag">SCSS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Проект 4 -->
+                        <div class="project-card" data-category="design">
+                            <div class="project-card__image">
+                                <img src="/images/photo.jpg" alt="UI/UX Дизайн">
+                                <div class="project-card__overlay">
+                                    <span class="project-card__view">Посмотреть проект</span>
+                                </div>
+                            </div>
+                            <div class="project-card__info">
+                                <h3 class="project-card__title">UI/UX Дизайн</h3>
+                                <p class="project-card__description">Дизайн мобильного приложения</p>
+                                <div class="project-card__tags">
+                                    <span class="project-tag">Figma</span>
+                                    <span class="project-tag">Adobe XD</span>
+                                    <span class="project-tag">Прототипирование</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Проект 5 -->
+                        <div class="project-card" data-category="mobile">
+                            <div class="project-card__image">
+                                <img src="/images//photo.jpg" alt="Мобильное приложение">
+                                <div class="project-card__overlay">
+                                    <span class="project-card__view">Посмотреть проект</span>
+                                </div>
+                            </div>
+                            <div class="project-card__info">
+                                <h3 class="project-card__title">Мобильное приложение</h3>
+                                <p class="project-card__description">Приложение для заметок на React Native</p>
+                                <div class="project-card__tags">
+                                    <span class="project-tag">React Native</span>
+                                    <span class="project-tag">Redux</span>
+                                    <span class="project-tag">SQLite</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="design">
+                            <div class="project-card__image">
+                                <img src="/images/photo.jpg" alt="Брендинг">
+                                <div class="project-card__overlay">
+                                    <span class="project-card__view">Посмотреть проект</span>
+                                </div>
+                            </div>
+                            <div class="project-card__info">
+                                <h3 class="project-card__title">Брендинг</h3>
+                                <p class="project-card__description">Разработка фирменного стиля</p>
+                                <div class="project-card__tags">
+                                    <span class="project-tag">Illustrator</span>
+                                    <span class="project-tag">Photoshop</span>
+                                    <span class="project-tag">Брендбук</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <p>&copy; 2025 Портфолио Иванова Александра. Все права защищены.</p>
+            </footer>
+        </div>
+    </div>
+
+
+    <div id="modal-project-1" class="modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <div class="modal__header">
+                <h2 class="modal__title">Интернет-магазин</h2>
+                <div class="modal__tags">
+                    <span class="modal-tag">HTML/CSS</span>
+                    <span class="modal-tag">JavaScript</span>
+                    <span class="modal-tag">PHP</span>
+                    <span class="modal-tag">MySQL</span>
+                </div>
+            </div>
+            <div class="modal__body">
+                <div class="modal__gallery">
+                    <div class="modal__main-image">
+                        <img src="/images/project1-large.jpg" alt="Интернет-магазин">
+                    </div>
+                    <div class="modal__thumbnails">
+                        <img src="/images/project1-thumb1.jpg" alt="Скриншот 1">
+                        <img src="/images/project1-thumb2.jpg" alt="Скриншот 2">
+                        <img src="/images/project1-thumb3.jpg" alt="Скриншот 3">
+                    </div>
+                </div>
+                <div class="modal__info">
+                    <div class="modal__description">
+                        <h3>Описание проекта</h3>
+                        <p>Полнофункциональный интернет-магазин электроники с системой управления товарами, корзиной покупок и интеграцией с платежными системами.</p>
+                        <p>Проект включает административную панель для управления товарами, заказами и пользователями. Реализована система фильтрации и поиска товаров, отзывы и рейтинги.</p>
+                    </div>
+                    <div class="modal__features">
+                        <h3>Основные функции</h3>
+                        <ul>
+                            <li>Каталог товаров с фильтрацией</li>
+                            <li>Корзина покупок</li>
+                            <li>Система оплаты</li>
+                            <li>Личный кабинет пользователя</li>
+                            <li>Административная панель</li>
+                        </ul>
+                    </div>
+                    <div class="modal__links">
+                        <a href="https://example-shop.com" class="modal-link live-demo" target="_blank">Живая демонстрация</a>
+                        <a href="https://github.com/username/shop" class="modal-link source-code" target="_blank">Исходный код</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-project-2" class="modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <div class="modal__header">
+                <h2 class="modal__title">Корпоративный сайт</h2>
+                <div class="modal__tags">
+                    <span class="modal-tag">React</span>
+                    <span class="modal-tag">Bootstrap</span>
+                    <span class="modal-tag">API</span>
+                    <span class="modal-tag">Node.js</span>
+                </div>
+            </div>
+            <div class="modal__body">
+                <div class="modal__gallery">
+                    <div class="modal__main-image">
+                        <img src="/images/photo.jpg" alt="Корпоративный сайт">
+                    </div>
+                    <div class="modal__thumbnails">
+                        <img src="/images/photo.jpg" alt="Скриншот 1">
+                        <img src="/images/photo.jpg" alt="Скриншот 2">
+                    </div>
+                </div>
+                <div class="modal__info">
+                    <div class="modal__description">
+                        <h3>Описание проекта</h3>
+                        <p>Современный адаптивный корпоративный сайт для IT-компании с анимациями, блогом и системой управления контентом.</p>
+                        <p>Сайт включает разделы "О компании", "Услуги", "Портфолио", "Блог" и "Контакты". Реализована админ-панель для управления контентом.</p>
+                    </div>
+                    <div class="modal__features">
+                        <h3>Основные функции</h3>
+                        <ul>
+                            <li>Адаптивный дизайн</li>
+                            <li>Система управления контентом</li>
+                            <li>Блог с комментариями</li>
+                            <li>Форма обратной связи</li>
+                            <li>Интеграция с социальными сетями</li>
+                        </ul>
+                    </div>
+                    <div class="modal__links">
+                        <a href="https://example-corp.com" class="modal-link live-demo" target="_blank">Живая демонстрация</a>
+                        <a href="https://github.com/username/corporate-site" class="modal-link source-code" target="_blank">Исходный код</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Добавьте аналогичные модальные окна для остальных проектов -->
+
+    <script src="/scripts/projects.js"></script>
+</body>
+
+</html>

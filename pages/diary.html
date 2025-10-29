@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дневник - Портфолио Иванова Александра</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="content">
+            <header class="header">
+                <div class="header__logo">
+                    <img class="header__logo-img" src="/images/MIREA_Gerb_Colour.png" alt="Логотип МИРЭА">
+                </div>
+                <h1 class="header__text">Иванов Александр Димитриевич</h1>
+                <p class="header__subtitle">Дневник учебного процесса</p>
+            </header>
+
+            <nav class="nav">
+                <div class="nav__container">
+                    <a href="/index.html" class="nav__button-link">Главная</a>
+                    <a href="/pages/projects.html" class="nav__button-link">Проекты</a>
+                    <a href="/pages/diary.html" class="nav__button-link active">Дневник</a>
+                    <a href="/pages/contacts.html" class="nav__button-link">Контакты</a>
+                </div>
+            </nav>
+
+            <main class="diary-main">
+                <div class="diary-container">
+                    <div class="diary-grid">
+                        <!-- Левая колонка - Учебный прогресс -->
+                        <div class="diary-column">
+                            <section class="progress-section">
+                                <h2 class="section-title">Мой учебный прогресс</h2>
+                                <div class="timeline">
+                                    <div class="timeline-item completed">
+                                        <div class="timeline-date">15 дек</div>
+                                        <div class="timeline-content">
+                                            <h3 class="timeline-title">Верстка макета сайта</h3>
+                                            <p class="timeline-description">Завершил работу над адаптивной версткой главной страницы портфолио</p>
+                                            <span class="status-badge completed">✓ Выполнено</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item completed">
+                                        <div class="timeline-date">10 дек</div>
+                                        <div class="timeline-content">
+                                            <h3 class="timeline-title">JavaScript основы</h3>
+                                            <p class="timeline-description">Изучил основные концепции: переменные, функции, DOM-манипуляции</p>
+                                            <span class="status-badge completed">✓ Выполнено</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item in-progress">
+                                        <div class="timeline-date">05 дек</div>
+                                        <div class="timeline-content">
+                                            <h3 class="timeline-title">Работа с формами</h3>
+                                            <p class="timeline-description">Создание интерактивных форм с валидацией и обработкой данных</p>
+                                            <span class="status-badge in-progress">In progress</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item in-progress">
+                                        <div class="timeline-date">01 дек</div>
+                                        <div class="timeline-content">
+                                            <h3 class="timeline-title">Адаптивный дизайн</h3>
+                                            <p class="timeline-description">Освоение медиа-запросов и flexbox/grid для создания responsive интерфейсов</p>
+                                            <span class="status-badge in-progress">In progress</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline-item planned">
+                                        <div class="timeline-date">20 дек</div>
+                                        <div class="timeline-content">
+                                            <h3 class="timeline-title">React компоненты</h3>
+                                            <p class="timeline-description">Изучение создания и использования React компонентов</p>
+                                            <span class="status-badge planned">Запланировано</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-- Правая колонка - Текущие курсы -->
+                        <div class="diary-column">
+                            <section class="courses-section">
+                                <h2 class="section-title">Текущие курсы</h2>
+                                <div class="courses-list">
+                                    <div class="course-item">
+                                        <div class="course-header">
+                                            <h3 class="course-title">Веб-разработка</h3>
+                                            <span class="course-percent">90%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill web-dev-fill"></div>
+                                        </div>
+                                        <p class="course-description">HTML, CSS, JavaScript, основы backend</p>
+                                    </div>
+
+                                    <div class="course-item">
+                                        <div class="course-header">
+                                            <h3 class="course-title">JavaScript</h3>
+                                            <span class="course-percent">70%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill js-fill"></div>
+                                        </div>
+                                        <p class="course-description">Продвинутый JavaScript, асинхронное программирование</p>
+                                    </div>
+
+                                    <div class="course-item">
+                                        <div class="course-header">
+                                            <h3 class="course-title">React</h3>
+                                            <span class="course-percent">50%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill react-fill"></div>
+                                        </div>
+                                        <p class="course-description">Библиотека React, хуки, управление состоянием</p>
+                                    </div>
+
+                                    <div class="course-item">
+                                        <div class="course-header">
+                                            <h3 class="course-title">Базы данных</h3>
+                                            <span class="course-percent">30%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill db-fill"></div>
+                                        </div>
+                                        <p class="course-description">SQL, MongoDB, проектирование баз данных</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Форма добавления записи -->
+                            <section class="add-entry-section">
+                                <h2 class="section-title">Добавить запись</h2>
+                                <form class="entry-form" id="diaryForm">
+                                    <div class="form-group">
+                                        <label for="entryDate">Дата:</label>
+                                        <input type="date" id="entryDate" class="form-input" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="entryTitle">Название:</label>
+                                        <input type="text" id="entryTitle" class="form-input" placeholder="Что вы изучили?" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="entryDescription">Описание:</label>
+                                        <textarea id="entryDescription" class="form-textarea" placeholder="Опишите ваш прогресс..." rows="3"></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="entryStatus">Статус:</label>
+                                        <select id="entryStatus" class="form-select" required>
+                                            <option value="planned">Запланировано</option>
+                                            <option value="in-progress">In progress</option>
+                                            <option value="completed">Выполнено</option>
+                                        </select>
+                                    </div>
+
+                                    <button type="submit" class="submit-btn">Добавить запись</button>
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <p>&copy; 2025 Портфолио Иванова Александра. <a href="/pages/contacts.html" class="footer-link">Контакты</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="/scripts/diary.js"></script>
+</body>
+
+</html>
