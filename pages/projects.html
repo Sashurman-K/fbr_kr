@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="projects-grid">
-                        <div class="project-card" data-category="web">
+                        <div class="project-card" data-category="web" data-modal="modal-project-1">
                             <div class="project-card__image">
                                 <img src="../images/photo.jpg" alt="Интернет-магазин">
                                 <div class="project-card__overlay">
@@ -56,7 +56,7 @@
                             </div>
                         </div>
 
-                        <div class="project-card" data-category="web">
+                        <div class="project-card" data-category="web" data-modal="modal-project-2">
                             <div class="project-card__image">
                                 <img src="../images//photo.jpg" alt="Корпоративный сайт">
                                 <div class="project-card__overlay">
@@ -74,7 +74,7 @@
                             </div>
                         </div>
 
-                        <div class="project-card" data-category="web">
+                        <div class="project-card" data-category="web" data-modal="modal-project-3">
                             <div class="project-card__image">
                                 <img src="../images/photo.jpg" alt="Веб-приложение">
                                 <div class="project-card__overlay">
@@ -92,8 +92,7 @@
                             </div>
                         </div>
 
-                        <!-- Проект 4 -->
-                        <div class="project-card" data-category="design">
+                        <div class="project-card" data-category="design" data-modal="modal-project-4">
                             <div class="project-card__image">
                                 <img src="../images/photo.jpg" alt="UI/UX Дизайн">
                                 <div class="project-card__overlay">
@@ -111,8 +110,7 @@
                             </div>
                         </div>
 
-                        <!-- Проект 5 -->
-                        <div class="project-card" data-category="mobile">
+                        <div class="project-card" data-category="mobile" data-modal="modal-project-5">
                             <div class="project-card__image">
                                 <img src="../images//photo.jpg" alt="Мобильное приложение">
                                 <div class="project-card__overlay">
@@ -130,7 +128,7 @@
                             </div>
                         </div>
 
-                        <div class="project-card" data-category="design">
+                        <div class="project-card" data-category="design" data-modal="modal-project-6">
                             <div class="project-card__image">
                                 <img src="../images/photo.jpg" alt="Брендинг">
                                 <div class="project-card__overlay">
@@ -157,7 +155,7 @@
         </div>
     </div>
 
-
+    <!-- Модальные окна для всех проектов -->
     <div id="modal-project-1" class="modal">
         <div class="modal__content">
             <span class="modal__close">&times;</span>
@@ -173,12 +171,12 @@
             <div class="modal__body">
                 <div class="modal__gallery">
                     <div class="modal__main-image">
-                        <img src="/images/project1-large.jpg" alt="Интернет-магазин">
+                        <img src="../images/photo.jpg" alt="Интернет-магазин">
                     </div>
                     <div class="modal__thumbnails">
-                        <img src="/images/project1-thumb1.jpg" alt="Скриншот 1">
-                        <img src="/images/project1-thumb2.jpg" alt="Скриншот 2">
-                        <img src="/images/project1-thumb3.jpg" alt="Скриншот 3">
+                        <img src="../images/photo.jpg" alt="Скриншот 1">
+                        <img src="../images/photo.jpg" alt="Скриншот 2">
+                        <img src="../images/photo.jpg" alt="Скриншот 3">
                     </div>
                 </div>
                 <div class="modal__info">
@@ -221,11 +219,11 @@
             <div class="modal__body">
                 <div class="modal__gallery">
                     <div class="modal__main-image">
-                        <img src="/images/photo.jpg" alt="Корпоративный сайт">
+                        <img src="../images/photo.jpg" alt="Корпоративный сайт">
                     </div>
                     <div class="modal__thumbnails">
-                        <img src="/images/photo.jpg" alt="Скриншот 1">
-                        <img src="/images/photo.jpg" alt="Скриншот 2">
+                        <img src="../images/photo.jpg" alt="Скриншот 1">
+                        <img src="../images/photo.jpg" alt="Скриншот 2">
                     </div>
                 </div>
                 <div class="modal__info">
@@ -253,9 +251,199 @@
         </div>
     </div>
 
-    <!-- Добавьте аналогичные модальные окна для остальных проектов -->
+    <div id="modal-project-3" class="modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <div class="modal__header">
+                <h2 class="modal__title">Веб-приложение для управления задачами</h2>
+                <div class="modal__tags">
+                    <span class="modal-tag">Vue.js</span>
+                    <span class="modal-tag">Firebase</span>
+                    <span class="modal-tag">SCSS</span>
+                    <span class="modal-tag">PWA</span>
+                </div>
+            </div>
+            <div class="modal__body">
+                <div class="modal__gallery">
+                    <div class="modal__main-image">
+                        <img src="../images/photo.jpg" alt="Веб-приложение">
+                    </div>
+                    <div class="modal__thumbnails">
+                        <img src="../images/photo.jpg" alt="Скриншот 1">
+                        <img src="../images/photo.jpg" alt="Скриншот 2">
+                        <img src="../images/photo.jpg" alt="Скриншот 3">
+                    </div>
+                </div>
+                <div class="modal__info">
+                    <div class="modal__description">
+                        <h3>Описание проекта</h3>
+                        <p>Прогрессивное веб-приложение для управления задачами с возможностью работы офлайн и синхронизацией данных между устройствами.</p>
+                        <p>Приложение поддерживает создание проектов, назначение сроков, приоритетов и категорий задач. Реализована система уведомлений и аналитика продуктивности.</p>
+                    </div>
+                    <div class="modal__features">
+                        <h3>Основные функции</h3>
+                        <ul>
+                            <li>Создание и управление задачами</li>
+                            <li>Работа офлайн (PWA)</li>
+                            <li>Синхронизация между устройствами</li>
+                            <li>Система уведомлений</li>
+                            <li>Аналитика продуктивности</li>
+                        </ul>
+                    </div>
+                    <div class="modal__links">
+                        <a href="https://example-todo.com" class="modal-link live-demo" target="_blank">Живая демонстрация</a>
+                        <a href="https://github.com/username/todo-app" class="modal-link source-code" target="_blank">Исходный код</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="/scripts/projects.js"></script>
+    <div id="modal-project-4" class="modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <div class="modal__header">
+                <h2 class="modal__title">UI/UX Дизайн мобильного приложения</h2>
+                <div class="modal__tags">
+                    <span class="modal-tag">Figma</span>
+                    <span class="modal-tag">Adobe XD</span>
+                    <span class="modal-tag">Прототипирование</span>
+                    <span class="modal-tag">User Research</span>
+                </div>
+            </div>
+            <div class="modal__body">
+                <div class="modal__gallery">
+                    <div class="modal__main-image">
+                        <img src="../images/photo.jpg" alt="UI/UX Дизайн">
+                    </div>
+                    <div class="modal__thumbnails">
+                        <img src="../images/photo.jpg" alt="Мокапы">
+                        <img src="../images/photo.jpg" alt="Прототип">
+                        <img src="../images/photo.jpg" alt="Готовый дизайн">
+                    </div>
+                </div>
+                <div class="modal__info">
+                    <div class="modal__description">
+                        <h3>Описание проекта</h3>
+                        <p>Полный цикл разработки пользовательского интерфейса и опыта для мобильного приложения доставки еды.</p>
+                        <p>Проект включает исследование пользователей, создание пользовательских сценариев, проектирование информационной архитектуры, разработку вайрфреймов и высокодетализированных прототипов.</p>
+                    </div>
+                    <div class="modal__features">
+                        <h3>Основные этапы</h3>
+                        <ul>
+                            <li>Исследование и анализ конкурентов</li>
+                            <li>Создание пользовательских персонажей</li>
+                            <li>Разработка информационной архитектуры</li>
+                            <li>Создание интерактивных прототипов</li>
+                            <li>Тестирование юзабилити</li>
+                        </ul>
+                    </div>
+                    <div class="modal__links">
+                        <a href="https://figma.com/project" class="modal-link live-demo" target="_blank">Figma прототип</a>
+                        <a href="../files/design-case-study.pdf" class="modal-link source-code" target="_blank">Кейс (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-project-5" class="modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <div class="modal__header">
+                <h2 class="modal__title">Мобильное приложение для заметок</h2>
+                <div class="modal__tags">
+                    <span class="modal-tag">React Native</span>
+                    <span class="modal-tag">Redux</span>
+                    <span class="modal-tag">SQLite</span>
+                    <span class="modal-tag">Expo</span>
+                </div>
+            </div>
+            <div class="modal__body">
+                <div class="modal__gallery">
+                    <div class="modal__main-image">
+                        <img src="../images/photo.jpg" alt="Мобильное приложение">
+                    </div>
+                    <div class="modal__thumbnails">
+                        <img src="../images/photo.jpg" alt="Главный экран">
+                        <img src="../images/photo.jpg" alt="Создание заметки">
+                        <img src="../images/photo.jpg" alt="Настройки">
+                    </div>
+                </div>
+                <div class="modal__info">
+                    <div class="modal__description">
+                        <h3>Описание проекта</h3>
+                        <p>Кроссплатформенное мобильное приложение для создания и управления заметками с поддержкой форматирования, категорий и поиска.</p>
+                        <p>Приложение работает на iOS и Android, поддерживает темную тему, обладает интуитивно понятным интерфейсом и быстрым поиском по содержимому заметок.</p>
+                    </div>
+                    <div class="modal__features">
+                        <h3>Основные функции</h3>
+                        <ul>
+                            <li>Создание и редактирование заметок</li>
+                            <li>Поддержка форматирования текста</li>
+                            <li>Система категорий и тегов</li>
+                            <li>Быстрый поиск</li>
+                            <li>Темная и светлая темы</li>
+                        </ul>
+                    </div>
+                    <div class="modal__links">
+                        <a href="https://play.google.com/store/apps/details?id=com.notesapp" class="modal-link live-demo" target="_blank">Google Play</a>
+                        <a href="https://github.com/username/notes-app" class="modal-link source-code" target="_blank">Исходный код</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-project-6" class="modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <div class="modal__header">
+                <h2 class="modal__title">Брендинг и фирменный стиль</h2>
+                <div class="modal__tags">
+                    <span class="modal-tag">Illustrator</span>
+                    <span class="modal-tag">Photoshop</span>
+                    <span class="modal-tag">Брендбук</span>
+                    <span class="modal-tag">Айдентика</span>
+                </div>
+            </div>
+            <div class="modal__body">
+                <div class="modal__gallery">
+                    <div class="modal__main-image">
+                        <img src="../images/photo.jpg" alt="Брендинг">
+                    </div>
+                    <div class="modal__thumbnails">
+                        <img src="../images/photo.jpg" alt="Логотип">
+                        <img src="../images/photo.jpg" alt="Цветовая палитра">
+                        <img src="../images/photo.jpg" alt="Брендбук">
+                    </div>
+                </div>
+                <div class="modal__info">
+                    <div class="modal__description">
+                        <h3>Описание проекта</h3>
+                        <p>Разработка комплексного фирменного стиля для стартапа в сфере образовательных технологий.</p>
+                        <p>Проект включает создание логотипа, цветовой палитры, типографики, системы графических элементов и руководства по использованию бренда.</p>
+                    </div>
+                    <div class="modal__features">
+                        <h3>Компоненты бренда</h3>
+                        <ul>
+                            <li>Логотип и его вариации</li>
+                            <li>Цветовая палитра</li>
+                            <li>Типографическая система</li>
+                            <li>Графические элементы</li>
+                            <li>Брендбук и гайдлайны</li>
+                        </ul>
+                    </div>
+                    <div class="modal__links">
+                        <a href="../files/brandbook.pdf" class="modal-link live-demo" target="_blank">Брендбук (PDF)</a>
+                        <a href="../files/brand-assets.zip" class="modal-link source-code" target="_blank">Ассеты (ZIP)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/projects.js"></script>
 </body>
 
 </html>
