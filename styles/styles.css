@@ -59,7 +59,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/images/header-background.png');
+    background-image: url('../images/header-background.png');
     background-size: cover;
     background-position: center;
     opacity: 0.1;
@@ -464,7 +464,6 @@ body{
     }
 }
 
-/* Стили для страницы проектов */
 .projects-page__container {
     padding: 40px;
     background-color: var(--white);
@@ -1446,27 +1445,27 @@ body{
     .contacts-main {
         padding: 20px;
     }
-    
+
     .contacts-grid {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .contact-form-section,
     .contact-info-section {
         padding: 20px;
     }
-    
+
     .contact-item {
         flex-direction: column;
         text-align: center;
         gap: 10px;
     }
-    
+
     .contact-icon {
         align-self: center;
     }
-    
+
     .social-icons {
         justify-content: center;
     }
