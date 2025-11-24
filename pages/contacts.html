@@ -19,7 +19,7 @@
                 <p class="header__subtitle">Свяжитесь со мной</p>
             </header>
 
-            <nav class="nav">
+            <nav class="nav" role="navigation" aria-label="Основное меню">
                 <div class="nav__container">
                     <a href="../index.html" class="nav__button-link">Главная</a>
                     <a href="projects.html" class="nav__button-link">Проекты</a>
@@ -34,31 +34,56 @@
                         <div class="contacts-column">
                             <section class="contact-form-section">
                                 <h2 class="section-title">Напишите мне</h2>
-                                <form class="contact-form" id="contactForm">
-                                    <div class="form-group">
-                                        <label for="userName" class="form-label">Имя:</label>
-                                        <input type="text" id="userName" class="form-input" placeholder="Введите ваше имя" required>
-                                        <div class="error-message" id="nameError"></div>
-                                    </div>
+                                <form class="contact-form" id="contactForm" role="form" aria-labelledby="contact-heading" novalidate>
+                                    <fieldset class="form-fieldset">
+                                        <legend class="form-legend visually-hidden">Контактная информация <span class="required-asterisk">*</span> <span class="required-text">(обязательные поля)</span></legend>
 
-                                    <div class="form-group">
-                                        <label for="userEmail" class="form-label">Email:</label>
-                                        <input type="email" id="userEmail" class="form-input" placeholder="your@email.com" required>
-                                        <div class="error-message" id="emailError"></div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="userMessage" class="form-label">Сообщение:</label>
-                                        <textarea id="userMessage" class="form-textarea" placeholder="Напишите ваше сообщение..." rows="6" required></textarea>
-                                        <div class="error-message" id="messageError"></div>
-                                    </div>
-
-                                    <button type="submit" class="submit-btn contact-submit">
-                                        <span class="btn-text">Отправить сообщение</span>
-                                        <div class="btn-loading" style="display: none;">
-                                            <div class="loading-spinner"></div>
-                                            Отправка...
+                                        <div class="form-group">
+                                            <label for="userName" class="form-label">Имя <span class="required-asterisk">*</span></label>
+                                            <input type="text"
+                                                   id="userName"
+                                                   class="form-input"
+                                                   placeholder="Введите ваше имя"
+                                                   aria-required="true"
+                                                   required
+                                                   aria-invalid="false"
+                                                   aria-describedby="name-error">
+                                            <div class="error-message" id="name-error" aria-live="polite"></div>
                                         </div>
+
+                                        <div class="form-group">
+                                            <label for="userEmail" class="form-label">Email <span class="required-asterisk">*</span></label>
+                                            <input type="email"
+                                                   id="userEmail"
+                                                   class="form-input"
+                                                   placeholder="your@email.com"
+                                                   aria-required="true"
+                                                   required
+                                                   aria-invalid="false"
+                                                   aria-describedby="email-error">
+                                            <div class="error-message" id="email-error" aria-live="polite"></div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="userMessage" class="form-label">Сообщение <span class="required-asterisk">*</span></label>
+                                            <textarea id="userMessage"
+                                                      class="form-textarea"
+                                                      placeholder="Напишите ваше сообщение..."
+                                                      rows="6"
+                                                      aria-required="true"
+                                                      required
+                                                      aria-invalid="false"
+                                                      aria-describedby="message-error"></textarea>
+                                            <div class="error-message" id="message-error" aria-live="polite"></div>
+                                        </div>
+                                    </fieldset>
+
+                                    <button type="submit" class="submit-btn contact-submit" role="button">
+                                        <span class="btn-text">Отправить сообщение</span>
+                                        <span class="btn-loading" style="display: none;">
+                                            <span class="loading-spinner"></span>
+                                            Отправка...
+                                        </span>
                                     </button>
                                 </form>
                             </section>

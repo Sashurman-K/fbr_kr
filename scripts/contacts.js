@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const userEmail = document.getElementById('userEmail');
     const userMessage = document.getElementById('userMessage');
 
-    // Элементы ошибок
-    const nameError = document.getElementById('nameError');
-    const emailError = document.getElementById('emailError');
-    const messageError = document.getElementById('messageError');
+    // Элементы ошибок (обновлены ID)
+    const nameError = document.getElementById('name-error');
+    const emailError = document.getElementById('email-error');
+    const messageError = document.getElementById('message-error');
 
     // Кнопка отправки
     const submitBtn = contactForm.querySelector('.contact-submit');
@@ -62,6 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Показать ошибку
     function showError(input, errorElement, message) {
+        // ДОБАВЛЕНО: установка aria-invalid="true"
+        input.setAttribute('aria-invalid', 'true');
         input.classList.add('error');
         errorElement.textContent = message;
         errorElement.style.display = 'block';
@@ -69,6 +71,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Очистить ошибку
     function clearError(input, errorElement) {
+        // ДОБАВЛЕНО: установка aria-invalid="false"
+        input.setAttribute('aria-invalid', 'false');
         input.classList.remove('error');
         errorElement.textContent = '';
         errorElement.style.display = 'none';
@@ -79,6 +83,8 @@ document.addEventListener('DOMContentLoaded', function() {
         btnText.style.display = 'none';
         btnLoading.style.display = 'flex';
         submitBtn.disabled = true;
+        // ДОБАВЛЕНО: атрибут доступности для состояния загрузки
+        submitBtn.setAttribute('aria-label', 'Отправка сообщения...');
     }
 
     // Скрыть состояние загрузки
@@ -86,18 +92,25 @@ document.addEventListener('DOMContentLoaded', function() {
         btnText.style.display = 'block';
         btnLoading.style.display = 'none';
         submitBtn.disabled = false;
+        // ДОБАВЛЕНО: возврат обычного атрибута
+        submitBtn.removeAttribute('aria-label');
     }
 
     // Открыть модальное окно успеха
     function openSuccessModal() {
         successModal.style.display = 'block';
         document.body.style.overflow = 'hidden';
+        // ДОБАВЛЕНО: фокус на модальном окне для доступности
+        successModal.setAttribute('aria-hidden', 'false');
+        document.querySelector('.modal__close').focus();
     }
 
     // Закрыть модальное окно
     function closeModal(modal) {
         modal.style.display = 'none';
         document.body.style.overflow = 'auto';
+        // ДОБАВЛЕНО: скрытие модалки для скринридеров
+        modal.setAttribute('aria-hidden', 'true');
     }
 
     // Обработка отправки формы
@@ -119,6 +132,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 hideLoading();
                 openSuccessModal();
                 contactForm.reset();
+
+                // ДОБАВЛЕНО: сброс состояний aria-invalid после успешной отправки
+                clearError(userName, nameError);
+                clearError(userEmail, emailError);
+                clearError(userMessage, messageError);
             }, 2000);
         }
     });
