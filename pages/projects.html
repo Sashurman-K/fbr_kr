@@ -10,7 +10,7 @@
 
 <body>
     <div class="page">
-        <div class="content">
+            <a class="skip-link" href="#main">Перейти к основному содержимому</a>
             <header class="header">
                 <div class="header__logo">
                     <img class="header__logo-img" src="../images/MIREA_Gerb_Colour.png" alt="Логотип МИРЭА">
@@ -27,7 +27,7 @@
                     <a href="contacts.html" class="nav__button-link">Контакты</a>
                 </div>
             </nav>
-
+            <div class="content">
             <main>
                 <div class="projects-page__container">
                     <div class="projects-filter">
@@ -40,7 +40,17 @@
                     <div class="projects-grid">
                         <div class="project-card" data-category="web" data-modal="modal-project-1">
                             <div class="project-card__image">
-                                <img src="../images/photo.jpg" alt="Интернет-магазин">
+                                <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                                 <div class="project-card__overlay">
                                     <span class="project-card__view">Посмотреть проект</span>
                                 </div>
@@ -58,7 +68,17 @@
 
                         <div class="project-card" data-category="web" data-modal="modal-project-2">
                             <div class="project-card__image">
-                                <img src="../images//photo.jpg" alt="Корпоративный сайт">
+                                <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                                 <div class="project-card__overlay">
                                     <span class="project-card__view">Посмотреть проект</span>
                                 </div>
@@ -76,7 +96,17 @@
 
                         <div class="project-card" data-category="web" data-modal="modal-project-3">
                             <div class="project-card__image">
-                                <img src="../images/photo.jpg" alt="Веб-приложение">
+                                <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                                 <div class="project-card__overlay">
                                     <span class="project-card__view">Посмотреть проект</span>
                                 </div>
@@ -94,7 +124,17 @@
 
                         <div class="project-card" data-category="design" data-modal="modal-project-4">
                             <div class="project-card__image">
-                                <img src="../images/photo.jpg" alt="UI/UX Дизайн">
+                                <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                                 <div class="project-card__overlay">
                                     <span class="project-card__view">Посмотреть проект</span>
                                 </div>
@@ -112,7 +152,17 @@
 
                         <div class="project-card" data-category="mobile" data-modal="modal-project-5">
                             <div class="project-card__image">
-                                <img src="../images//photo.jpg" alt="Мобильное приложение">
+                                <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                                 <div class="project-card__overlay">
                                     <span class="project-card__view">Посмотреть проект</span>
                                 </div>
@@ -130,7 +180,17 @@
 
                         <div class="project-card" data-category="design" data-modal="modal-project-6">
                             <div class="project-card__image">
-                                <img src="../images/photo.jpg" alt="Брендинг">
+                               <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                                 <div class="project-card__overlay">
                                     <span class="project-card__view">Посмотреть проект</span>
                                 </div>
@@ -171,12 +231,52 @@
             <div class="modal__body">
                 <div class="modal__gallery">
                     <div class="modal__main-image">
-                        <img src="../images/photo.jpg" alt="Интернет-магазин">
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                     </div>
                     <div class="modal__thumbnails">
-                        <img src="../images/photo.jpg" alt="Скриншот 1">
-                        <img src="../images/photo.jpg" alt="Скриншот 2">
-                        <img src="../images/photo.jpg" alt="Скриншот 3">
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                     </div>
                 </div>
                 <div class="modal__info">
@@ -219,11 +319,41 @@
             <div class="modal__body">
                 <div class="modal__gallery">
                     <div class="modal__main-image">
-                        <img src="../images/photo.jpg" alt="Корпоративный сайт">
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                     </div>
                     <div class="modal__thumbnails">
-                        <img src="../images/photo.jpg" alt="Скриншот 1">
-                        <img src="../images/photo.jpg" alt="Скриншот 2">
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                     </div>
                 </div>
                 <div class="modal__info">
@@ -266,12 +396,52 @@
             <div class="modal__body">
                 <div class="modal__gallery">
                     <div class="modal__main-image">
-                        <img src="../images/photo.jpg" alt="Веб-приложение">
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                     </div>
                     <div class="modal__thumbnails">
-                        <img src="../images/photo.jpg" alt="Скриншот 1">
-                        <img src="../images/photo.jpg" alt="Скриншот 2">
-                        <img src="../images/photo.jpg" alt="Скриншот 3">
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                     </div>
                 </div>
                 <div class="modal__info">
@@ -314,12 +484,52 @@
             <div class="modal__body">
                 <div class="modal__gallery">
                     <div class="modal__main-image">
-                        <img src="../images/photo.jpg" alt="UI/UX Дизайн">
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                     </div>
                     <div class="modal__thumbnails">
-                        <img src="../images/photo.jpg" alt="Мокапы">
-                        <img src="../images/photo.jpg" alt="Прототип">
-                        <img src="../images/photo.jpg" alt="Готовый дизайн">
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                     </div>
                 </div>
                 <div class="modal__info">
@@ -362,12 +572,52 @@
             <div class="modal__body">
                 <div class="modal__gallery">
                     <div class="modal__main-image">
-                        <img src="../images/photo.jpg" alt="Мобильное приложение">
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="hero__photo" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                     </div>
                     <div class="modal__thumbnails">
-                        <img src="../images/photo.jpg" alt="Главный экран">
-                        <img src="../images/photo.jpg" alt="Создание заметки">
-                        <img src="../images/photo.jpg" alt="Настройки">
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="hero__photo" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="hero__photo" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="hero__photo" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                     </div>
                 </div>
                 <div class="modal__info">
@@ -410,12 +660,52 @@
             <div class="modal__body">
                 <div class="modal__gallery">
                     <div class="modal__main-image">
-                        <img src="../images/photo.jpg" alt="Брендинг">
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="hero__photo" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                     </div>
                     <div class="modal__thumbnails">
-                        <img src="../images/photo.jpg" alt="Логотип">
-                        <img src="../images/photo.jpg" alt="Цветовая палитра">
-                        <img src="../images/photo.jpg" alt="Брендбук">
+                        <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="hero__photo" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
+                       <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="hero__photo" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
+                       <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="../images/photo/photo-300.avif 300w, ../images/photo/photo-400.avif 400w,
+../images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="../images/photo/photo-300.webp 300w, ../images/photo/photo-400.webp 400w,
+../images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="hero__photo" src="../images/photo/photo-300.jpg" srcset="../images/photo/photo-300.jpg 300w, ../images/photo/photo-400.jpg 400w,
+../images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Корпоративный сайт" loading="lazy">
+                                    </picture>
+                                </figure>
                     </div>
                 </div>
                 <div class="modal__info">

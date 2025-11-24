@@ -3,38 +3,52 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewportfit=cover">
+
     <title>Портфолио Иванова Александра</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <div class="page">
+        <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+        <header class="header">
+            <div class="header__logo">
+                <img class="header__logo-img" src="images/MIREA_Gerb_Colour.png" alt="Логотип МИРЭА">
+            </div>
+            <h1 class="header__text">Иванов Александр Димитриевич</h1>
+            <p class="header__subtitle">Студент группы ЭФБО-02-24</p>
+        </header>
+
+        <nav class="nav" aria-label="Основная навигация">
+            <div class="nav__container">
+                <a href="/index.html" class="nav__button-link active">Главная</a>
+                <a href="pages/projects.html" class="nav__button-link">Проекты</a>
+                <a href="pages/diary.html" class="nav__button-link">Дневник</a>
+                <a href="pages/contacts.html" class="nav__button-link">Контакты</a>
+            </div>
+        </nav>
         <div class="content">
-            <header class="header">
-                <div class="header__logo">
-                    <img class="header__logo-img" src="images/MIREA_Gerb_Colour.png" alt="Логотип МИРЭА">
-                </div>
-                <h1 class="header__text">Иванов Александр Димитриевич</h1>
-                <p class="header__subtitle">Студент группы ЭФБО-02-24</p>
-            </header>
 
-            <nav class="nav">
-                <div class="nav__container">
-                    <a href="/index.html" class="nav__button-link active">Главная</a>
-                    <a href="pages/projects.html" class="nav__button-link">Проекты</a>
-                    <a href="pages/diary.html" class="nav__button-link">Дневник</a>
-                    <a href="pages/contacts.html" class="nav__button-link">Контакты</a>
-                </div>
-            </nav>
-
-            <main>
+            <main class="main" id="main">
                 <div class="info__container">
-                    <img src="images/header-background.png" alt="Фото студента" class="info__img">
+                    <figure class="hero__image">
+                        <picture>
+                            <source type="image/avif" srcset="images/hero/hero-150.avif 150w, images/hero/hero-200.avif 200w,
+images/hero/hero-300.avif 300w" sizes="(max-width: 768px) 150px, 200px">
+                            <source type="image/webp" srcset="images/hero/hero-150.webp 150w, images/hero/hero-200.webp 200w,
+images/hero/hero-300.webp 300w" sizes="(max-width: 768px) 150px, 200px">
+                            <img class="hero__photo" src="images/hero/hero-200.jpg" srcset="images/hero/hero-150.jpg 150w, images/hero/hero-200.jpg 200w,
+images/hero/hero-300.jpg 300w" sizes="(max-width: 768px) 150px, 200px" width="200" height="200" alt="Портрет студента"
+                                fetchpriority="high">
+                        </picture>
+                    </figure>
                     <div class="info__text-content">
                         <p class="info__text-1">Привет! Я студент группы ЭФБО-02-24</p>
-                        <p class="info__text-2">Увлекаюсь веб-разработкой, изучаю современные технологии и создаю интересные проекты.</p>
-                        <a class="info__download-button" href="/assets/Практическое занятие №14 Фронтенд и бэкенд разработка (Часть 1 из 2).pdf">
+                        <p class="info__text-2">Увлекаюсь веб-разработкой, изучаю современные технологии и создаю
+                            интересные проекты.</p>
+                        <a class="info__download-button"
+                            href="/assets/Практическое занятие №14 Фронтенд и бэкенд разработка (Часть 1 из 2).pdf">
                             Скачать резюме
                         </a>
                     </div>
@@ -90,14 +104,25 @@
                     <div class="projects__grid">
                         <div class="project__card">
                             <div class="project__image">
-                                <img src="images/photo.jpg" alt="Интернет-магазин">
+                                <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="images/photo/photo-300.avif 300w, images/photo/photo-400.avif 400w,
+images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="images/photo/photo-300.webp 300w, images/photo/photo-400.webp 400w,
+images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="images/photo/photo-300.jpg" srcset="images/photo/photo-300.jpg 300w, images/photo/photo-400.jpg 400w,
+images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Интернет-магазин" loading="lazy">
+                                    </picture>
+                                </figure>
                                 <div class="project__overlay">
                                     <a href="#" class="project__link">Посмотреть проект</a>
                                 </div>
                             </div>
                             <div class="project__info">
                                 <h3 class="project__name">Интернет-магазин</h3>
-                                <p class="project__description">Полнофункциональный интернет-магазин с корзиной покупок и системой оплаты</p>
+                                <p class="project__description">Полнофункциональный интернет-магазин с корзиной покупок
+                                    и системой оплаты</p>
                                 <div class="project__tags">
                                     <span class="project__tag">HTML/CSS</span>
                                     <span class="project__tag">JavaScript</span>
@@ -108,14 +133,25 @@
 
                         <div class="project__card">
                             <div class="project__image">
-                                <img src="images/photo.jpg" alt="Корпоративный сайт">
+                                <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="images/photo/photo-300.avif 300w, images/photo/photo-400.avif 400w,
+images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="images/photo/photo-300.webp 300w, images/photo/photo-400.webp 400w,
+images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="images/photo/photo-300.jpg" srcset="images/photo/photo-300.jpg 300w, images/photo/photo-400.jpg 400w,
+images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Интернет-магазин" loading="lazy">
+                                    </picture>
+                                </figure>
                                 <div class="project__overlay">
                                     <a href="#" class="project__link">Посмотреть проект</a>
                                 </div>
                             </div>
                             <div class="project__info">
                                 <h3 class="project__name">Корпоративный сайт</h3>
-                                <p class="project__description">Современный адаптивный сайт для IT-компании с анимациями</p>
+                                <p class="project__description">Современный адаптивный сайт для IT-компании с анимациями
+                                </p>
                                 <div class="project__tags">
                                     <span class="project__tag">React</span>
                                     <span class="project__tag">Bootstrap</span>
@@ -126,14 +162,25 @@
 
                         <div class="project__card">
                             <div class="project__image">
-                                <img src="images/photo.jpg" alt="Веб-приложение">
+                                <figure>
+                                    <picture>
+                                        <source type="image/avif" srcset="images/photo/photo-300.avif 300w, images/photo/photo-400.avif 400w,
+images/photo/photo-650.avif 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <source type="image/webp" srcset="images/photo/photo-300.webp 300w, images/photo/photo-400.webp 400w,
+images/photo/photo-650.webp 650w" sizes="(max-width: 768px) 100vw, 400px">
+                                        <img class="project__image-inner" src="images/photo/photo-300.jpg" srcset="images/photo/photo-300.jpg 300w, images/photo/photo-400.jpg 400w,
+images/photo/photo-650.jpg 650w" sizes="(max-width: 768px) 100vw, 400px" width="200" height="200"
+                                            alt="Интернет-магазин" loading="lazy">
+                                    </picture>
+                                </figure>
                                 <div class="project__overlay">
                                     <a href="#" class="project__link">Посмотреть проект</a>
                                 </div>
                             </div>
                             <div class="project__info">
                                 <h3 class="project__name">Веб-приложение</h3>
-                                <p class="project__description">Приложение для управления задачами с drag-and-drop функционалом</p>
+                                <p class="project__description">Приложение для управления задачами с drag-and-drop
+                                    функционалом</p>
                                 <div class="project__tags">
                                     <span class="project__tag">Vue.js</span>
                                     <span class="project__tag">Firebase</span>
